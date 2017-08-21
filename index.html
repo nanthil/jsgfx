@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>webgl</title>
+  </head>
+  <body onload="Init()">
+    
+    <canvas id="surface"
+            width="1480"
+            height="700">
+      Browser not supported
+    </canvas>
+    <br/>
+
+
+    <script src="./src/app.js">//this is initalized after for gl reasons. not loaded by electron manually</script>
+
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
